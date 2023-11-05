@@ -1,0 +1,30 @@
+# Deployment object
+deployment:
+  enabled: true
+  name: helloworld
+  namespace: default
+  replicas: 1
+  appName: helloworld
+  role: api
+  containerName: helloworld-container
+  imageRepository: hello-world
+  imageTag: 0.0.0
+  port: 3004
+service:
+  enabled: true
+  name: helloworld-service
+  namespace: default
+  appName: helloworld
+  type: ClusterIP
+  servicePort: 3004
+  targetPort: 80
+serviceAccount:
+  enabled: true
+  name: helloworld-account
+  namespace: default
+# Namespace object
+namespace:
+  enabled: false
+# Ingress
+ingress:
+  enabled: false
