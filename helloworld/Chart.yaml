@@ -1,0 +1,10 @@
+apiVersion: v2
+description: Test Hello world
+keywords:
+  - helloworld
+maintainers:
+  - email: admin@tolfix.com
+    name: Tolfix
+name: helloworld
+appVersion: '0.1.0'
+version: 0.1.0
