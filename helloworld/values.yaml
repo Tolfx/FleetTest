@@ -7,7 +7,7 @@ deployment:
   appName: helloworld
   role: api
   containerName: helloworld-container
-  imageRepository: hello-world
+  imageRepository: infrastructureascode/hello-world
   imageTag: latest
   port: 3004
 service:
