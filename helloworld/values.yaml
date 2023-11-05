@@ -8,7 +8,7 @@ deployment:
   role: api
   containerName: helloworld-container
   imageRepository: hello-world
-  imageTag: 0.0.0
+  imageTag: nanoserver-ltsc2022
   port: 3004
 service:
   enabled: true
