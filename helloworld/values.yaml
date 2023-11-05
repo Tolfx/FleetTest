@@ -9,7 +9,7 @@ deployment:
   containerName: helloworld-container
   imageRepository: infrastructureascode/hello-world
   imageTag: latest
-  port: 3004
+  port: 8080
 service:
   enabled: true
   name: helloworld-service
@@ -17,7 +17,7 @@ service:
   appName: helloworld
   type: ClusterIP
   servicePort: 3004
-  targetPort: 80
+  targetPort: 8080
 serviceAccount:
   enabled: true
   name: helloworld-account
